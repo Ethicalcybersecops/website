@@ -1,0 +1,528 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    z-index: 999;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .logo span {
+    color: #e91e63;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #e91e63;
+}
+
+
+/* Banner Section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Background Video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Puts the video behind the content */
+}
+
+/* Other content styling inside the banner */
+.banner .content {
+    position: relative;
+    z-index: 2; /* Ensures the text appears above the video */
+    text-align: center;
+    color: white;
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* General Styling */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+#background-video1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Puts the video behind the content */
+}
+
+.max-width {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Left Column - Image */
+.column_left {
+    flex: 1;
+    max-width: 50%; /* Half of the page */
+}
+
+.column_left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Right Column - Text and Button */
+.column_right {
+    flex: 1;
+    max-width: 50%; /* Half of the page */
+    padding-left: 30px;
+}
+
+.column_right h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.column_right p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.column_right a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.column_right a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.banner h3 {
+    font-size: 2rem;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #c2185b;
+}
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+#about #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.about .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about .right {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #1e3551;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #1e3551;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about a:hover {
+    background-color: #333;
+}
+/* Services Section */
+.services {
+    position: relative;
+    background-color: transparent; /* Background handled by video */
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .max-width {
+    position: relative;
+    z-index: 1; /* Content appears above the video */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #fff; /* Ensure text color stands out against the video */
+}
+
+.services .serv-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    flex: 0 0 30%;
+    background-color: rgba(9, 7, 54, 0.85); /* Semi-transparent for readability */
+    margin: 15px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+}
+
+.services .card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.services .text {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.services p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+/* Contact Section Styles */
+.contact {
+    background: #333; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 80px 0;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center; /* Centers the text */
+    margin: 0 auto; /* Ensures the element itself is centered */
+    font-size: 36px; /* Size of the text */
+    color: #ffffff; /* Title text color */
+}
+
+.contact-content {
+    display: flex; /* Enable Flexbox for columns */
+    justify-content: space-between; /* Space between left and right */
+    align-items: center; /* Vertical alignment */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Left Column Styles */
+.contact-content .left,
+.contact-content .right {
+    flex: 1;
+    min-width: 45%; /* Adjust the size of the columns */
+    margin: 10px;
+}
+
+/* Text Alignment in Left Column */
+.contact-content .left {
+    text-align: left; /* Left align text */
+}
+
+.contact-content .left .text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-content .left p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.icons .row {
+    display: flex; /* Arrange icon and text in a row */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icons .row i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.icons .info {
+    line-height: 1.4;
+}
+
+.icons .info .head {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.icons .info .sub-title {
+    
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+/* Right Column Styles (Form) */
+.contact-content .right {
+    background: #444; /* Slightly darker background for form */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-content .right .text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-content .right form {
+    width: 100%;
+}
+
+.contact-content .right .fields {
+    display: flex; /* Arrange name and email fields in a row */
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-content .right .field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-content .right .field.name,
+.contact-content .right .field.email {
+    width: 48%;
+}
+
+.contact-content .right input,
+.contact-content .right textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background: #ffffff; /* White input fields */
+}
+
+.contact-content .right .textarea textarea {
+    resize: none; /* Disable resizing */
+}
+
+.contact-content .right .button-area {
+    text-align: center;
+}
+
+.contact-content .right button {
+    background: #007bff; /* Blue button */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-content .right button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .contact-content .left,
+    .contact-content .right {
+        min-width: 100%; /* Full-width columns */
+        margin: 10px 0; /* Adjust margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .about .max-width {
+        flex-direction: column;
+    }
+    .services .serv-content {
+        flex-direction: column;
+    }
+    .contact .contact-content {
+        flex-direction: column;
+    }
+}
