@@ -502,27 +502,30 @@ header ul li a:hover {
     background: #0056b3; /* Darker blue on hover */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column; /* Stack columns vertically */
-    }
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
 
-    .contact-content .left,
-    .contact-content .right {
-        min-width: 100%; /* Full-width columns */
-        margin: 10px 0; /* Adjust margins */
-    }
+/*     put your css */
 }
 
-@media (max-width: 768px) {
-    .about .max-width {
-        flex-direction: column;
-    }
-    .services .serv-content {
-        flex-direction: column;
-    }
-    .contact .contact-content {
-        flex-direction: column;
-    }
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /*     put your css */
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /*     put your css */
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+ /*     put your css */
+  
 }
