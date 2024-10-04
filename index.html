@@ -105,6 +105,8 @@ x`<!DOCTYPE html>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
+        
+          
         <div class="max-width">
             <h2 class="title">Contact Cyber SecOps</h2>
             <div class="contact-content">
@@ -130,7 +132,7 @@ x`<!DOCTYPE html>
                             <i class="fa-solid fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:ethicalcybersecops@gmail.com" style="text-decoration: none; color: #ffffff;">ethicalcybersecops@cybersecops.com</a></div>
+                                <div class="sub-title"><a href="mailto:ethicalcybersecops@gmail.com" style="text-decoration: none; color: #ffffff;">info@cybersecops.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -160,6 +162,32 @@ x`<!DOCTYPE html>
                 </div>
             </div>
         </div>
+        <script>
+            document.querySelector("form").addEventListener("submit", function (event) {
+              event.preventDefault();
+          
+              // Collect form data
+              const name = document.querySelector(".field.name input").value;
+              const email = document.querySelector(".field.email input").value;
+              const subject = document.querySelector(".field input").value;
+              const message = document.querySelector(".textarea textarea").value;
+          
+              // Construct the URL with parameters
+              const scriptURL = `https://script.google.com/macros/s/AKfycbwCR01psH3Twj50K7ZyGOEGQzXQtORq6iOhA7H4qxoLM50TEcSlOn1kDRyQ4VYhGKY_/exec?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
+          
+              // Send data using GET request
+              fetch(scriptURL)
+                .then(response => response.json())
+                .then(data => {
+                  alert("Message sent successfully!");
+                  console.log("Success:", data);
+                })
+                .catch(error => {
+                  alert("Failed to send message.");
+                  console.error("Error:", error);
+                });
+            });
+          </script>
     </section>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
