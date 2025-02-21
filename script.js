@@ -1,13 +1,11 @@
 
-$(document).ready(function () {
-    // Sticky Navbar on scroll
-    $(window).scroll(function () {
-        if (this.scrollY > 20) {
-            $(".navbar").addClass("sticky");
-        } else {
-            $(".navbar").removeClass("sticky");
-        }
-    });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+        $("header").addClass("sticky");
+    } else {
+        $("header").removeClass("sticky");
+    }
+
 
     // Smooth scroll for menu items
     $(".navbar .menu li a").click(function () {
@@ -27,6 +25,8 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true
     });
+    document.body.classList.toggle("night-mode");
+
 
     // Day/Night Mode Toggle (for fun interaction)
     let banner = document.querySelector('.banner');
