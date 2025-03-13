@@ -11,6 +11,7 @@
     <section class="banner">
         <header>
             <a href="#about" class="logo"><span>EthicalCyber</span>SecOps_</a>
+	    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul>
                 <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
                 <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
@@ -194,6 +195,11 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="script.js"></script>
+<script>function toggleMenu() {
+    document.querySelector("header ul").classList.toggle("active");
+}
+</script>
+
 
 </body>
 </html>
