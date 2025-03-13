@@ -26,6 +26,11 @@ $(window).scroll(function () {
         loop: true
     });
     document.body.classList.toggle("night-mode");
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector("nav ul").classList.toggle("active");
+});
+
+    
 
 
     // Day/Night Mode Toggle (for fun interaction)
@@ -34,4 +39,9 @@ $(window).scroll(function () {
     daynight.onclick = function () {
         banner.classList.toggle('night');
     }
+function toggleMenu() {
+    document.querySelector("header ul").classList.toggle("active");
+}
+
 });
+
